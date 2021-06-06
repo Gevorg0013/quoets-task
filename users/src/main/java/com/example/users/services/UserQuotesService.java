@@ -34,9 +34,9 @@ public class UserQuotesService {
             return Optional.empty();
         }
 
-        final Optional<QutesDetailsResponse> quotes = this.quoteClient.getQuoteByTag(user.get().getQueryTag());
+        final Optional<QutesDetailsResponse> quotes = this.quoteClient.getQuoteByTag(user.get().getQuoteTag());
         if (!quotes.isPresent()) {
-            System.out.println("There are not quotes for the tag: " + user.get().getQueryTag());
+            System.out.println("There are not quotes for the tag: " + user.get().getQuoteTag());
         } else {
             System.out.println("Quotes of the user's tag: " + quotes.get().getQuotes().size());
         }

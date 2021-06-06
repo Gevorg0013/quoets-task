@@ -1,0 +1,23 @@
+version: "3.8"
+
+networks:
+  backend:
+    external: false
+    name: backend
+services:
+  quotes:
+    networks:
+      - backend
+    image: quotes
+    container_name: quotes
+    ports:
+      - 8081:8081
+  users:
+    networks:
+      - backend
+    image: users
+    container_name: users
+    ports:
+      - 8082:8082
+    links:
+      - quotes

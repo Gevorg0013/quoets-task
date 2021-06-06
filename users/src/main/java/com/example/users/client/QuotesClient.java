@@ -20,9 +20,9 @@ public class QuotesClient {
     @Autowired
     private RestTemplate restTemplate;
 
-    private static final String QUOTES_ALL_API = "http://localhost:8081/api/quotes";
+    private static final String QUOTES_ALL_API = "http://quotes:8081/api/quotes";
 
-    private static final String QUOTE_TAGS_API = "http://localhost:8081/api/tags";
+    private static final String QUOTE_TAGS_API = "http://quotes:8081/api/tags";
 
     /**
      * Get quotes by provided tag

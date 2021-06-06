@@ -24,7 +24,7 @@ public class UserDetails {
         return this.name;
     }
 
-    public String getQueryTag() {
+    public String getQuoteTag() {
         return this.quoteTag;
     }
 
