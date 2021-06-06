@@ -23,7 +23,7 @@ public class UserDBManager {
             return Optional.empty();
         }
 
-        user.setId(UUID.randomUUID().toString());
+        user.setId(UUID.randomUUID().toString()); // Jva function to generate unique random ID
         idToUser.put(user.getId(), user);
 
         System.out.println("User has been created successfully! " + user.getId());

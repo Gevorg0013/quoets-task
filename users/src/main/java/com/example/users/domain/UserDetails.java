@@ -1,6 +1,7 @@
 package com.example.users.domain;
 
 /**
+ * Entity to be saved in DB
  *
  * @author gev
  */
